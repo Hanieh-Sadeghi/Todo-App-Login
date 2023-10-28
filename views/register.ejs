@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="/register.ejs" method="post" id="form" class="form">
+      <form action="/register" method="post" id="form" class="form">
         <h2>Register With Us</h2>
         <div class="form-control">
           <label for="username">Username</label>
@@ -25,16 +25,15 @@
           <input type="password" id="password" placeholder="Enter password" />
           <small>Error message</small>
         </div>
-        <div class="form-control">
+        <!-- <div class="form-control">
           <label for="password2">Confirm Password</label>
           <input
             type="password"
             id="password2"
             placeholder="Enter password again"
-          />
-          <small>Error message</small>
+          /> -->
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Register</button>
         <br />
         <small>Already have an account ?</small>
         <small><a href="/login">Login</a></small>

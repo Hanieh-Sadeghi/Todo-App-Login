@@ -3,28 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="client/style/style.css" />
+    <!-- <link rel="stylesheet" href="" /> -->
     <title>Login</title>
   </head>
   <body>
+    <% if (messages.error) { %> <%= messages.error %> <% } %>
     <div class="container">
-      <form action="/login" method="post" id="form" class="form">
+      <form action="/login" method="POST" id="form" class="form">
         <h2>Login</h2>
         <div class="form-control">
           <label for="username">Username</label>
           <input type="text" id="username" placeholder="Enter username" />
-          <small>Error message</small>
         </div>
         <div class="form-control">
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter password" />
-          <small>Error message</small>
         </div>
-        <button>Login</button>
-        <br/>
+        <button type="submit">Login</button>
+        <br />
         <small>Don't have an account ? </small>
         <small><a href="/register">Sign up</a></small>
-        <br/>
+        <br />
         <a href="/">Guest user</a>
       </form>
     </div>
