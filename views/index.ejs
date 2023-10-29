@@ -1,4 +1,52 @@
-<h1>Hi <%= username %></h1>
-<form action="/logout?_method=DELETE" method="POST">
-  <button type="submit">Log Out</button>
-</form>
+<!DOCTYPE html>
+<html lang="en" data-theme="theme-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <title>Todo to the server</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="username">
+        <span><%= username %></span>
+      </div>
+
+      <div id="task-input">
+        <input type="text" id="todoInput" placeholder="Add a new task" />
+        <button id="add-btn">+</button>
+      </div>
+      <div class="todo-form">
+        <div class="header">
+          <span class="active" id="all">All</span>
+          <span id="active">Active</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button id="clearBtn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+      <div class="form">
+        <span id="download">Download</span>
+        <span id="upload">Upload</span>
+        <form action="/login" method="POST">
+          <button type="submit">Log Out</button>
+        </form>
+      </div>
+      <!-- <span id="login">Login</span> -->
+      <!-- <span id="signUp">SignUp</span> -->
+
+      <footer>
+        <p>Todo list application</p>
+        <a href="https://github.com/Hanieh-Sadeghi">Github address</a>
+        <button id="themeBtn">Theme</button>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/view.js"></script>
+  </body>
+</html>
