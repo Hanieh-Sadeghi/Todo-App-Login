@@ -261,7 +261,7 @@ body {
 .form {
   display: flex;
   align-items: center;
-  margin: 0 80px;
+  margin: 0 50px;
 }
 
 .form span {
@@ -271,7 +271,7 @@ body {
 }
 
 .form button {
-  padding: 15px;
+  padding: 10px;
   border: none;
   background-color: #3c5d4500;
   color: var(--text);
@@ -308,6 +308,12 @@ footer a {
   font-size: 17px;
 }
 
-.username :hover {
+.userGuest {
+  padding: 10px 30px;
+  color: #fff8de89;
+  font-size: 20px;
+}
+
+.username .userGuest :hover {
   color: var(--hover);
 }
