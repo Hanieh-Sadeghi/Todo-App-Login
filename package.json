@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-flash": "^0.0.2",
+    "express-router": "^0.0.1",
     "express-session": "^1.17.3",
     "method-override": "^3.0.0",
     "nodemon": "^3.0.1",
