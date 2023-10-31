@@ -289,7 +289,7 @@ function filterTasks(mosi) {
 
 const download = document.getElementById("download");
 const upload = document.getElementById("upload");
-const url = "http://localhost:3000/v1/api";
+const url = "http://localhost:3000/api";
 
 download.addEventListener("click", async () => {
   const response = await fetch(url);
